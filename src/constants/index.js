@@ -1,3 +1,10 @@
+import { CgWebsite } from "react-icons/cg";
+import { MdWebAsset } from "react-icons/md";
+import { FaAppStoreIos } from "react-icons/fa";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { IoMdPhotos } from "react-icons/io";
+import { SiBrandfolder } from "react-icons/si";
+
 export const navItem = [
   {
     url: "#",
@@ -123,21 +130,27 @@ export const resumeItem = [
 export const serviceItem = [
   {
     title: "WEB DESIGN",
+    image: CgWebsite,
   },
   {
     title: "PHOTOGRAPHER",
+    image: IoMdPhotos,
   },
   {
     title: "WEB DEVELOPER",
+    image: MdWebAsset,
   },
   {
     title: "APP DEVELOPING",
+    image: FaAppStoreIos,
   },
   {
     title: "BRANDING",
+    image: SiBrandfolder,
   },
   {
     title: "MARKETTING",
+    image: BsGraphUpArrow,
   },
 ];
 

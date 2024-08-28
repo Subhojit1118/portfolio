@@ -1,5 +1,5 @@
 import React from "react";
-// import CustomizedSlider from "./MuiSlider";
+import ColorSlider from "./MuiSlider";
 const Skill = () => {
   return (
     <>
@@ -9,7 +9,10 @@ const Skill = () => {
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia
         </p>
-        {/* {CustomizedSlider()} */}
+        <div className="w-full grid grid-rows-1 grid-cols-2">
+          <div className="w-1/2 ">{ColorSlider()}</div>
+          <div className="w-1/2">{ColorSlider()}</div>
+        </div>
       </div>
     </>
   );

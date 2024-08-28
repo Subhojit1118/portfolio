@@ -1,6 +1,7 @@
 import React from "react";
 import profile from "../assets/images/profile-img.jpg";
 import { aboutItem } from "../constants";
+import cv from "../assets/images/cv.pdf";
 const About = () => {
   return (
     <>
@@ -25,7 +26,9 @@ const About = () => {
             })}
           </div>
           <button className="bg-[#ffbd39] text-black px-7 py-4 my-8 rounded-full font-bold text-xs">
-            DOWNLOAD CV
+            <a href={cv} download="resume">
+              DOWNLOAD CV
+            </a>
           </button>
         </div>
       </div>

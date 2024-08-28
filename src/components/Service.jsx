@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { serviceItem } from "../constants";
-import { web1 } from "../assets";
 
 const Service = () => {
   const [divColor, setDivColor] = useState("[#ffbd39]");
   const [title, setTitle] = useState("");
+  const [iconColor, setIconColor] = useState("[#ffbd39]");
   const handleMouseOver = (index) => {
     setDivColor("black");
+    setIconColor("white");
   };
 
   const handleMouseOut = () => {
     setDivColor("[#ffbd39]");
+    setIconColor("[#ffbd39]");
   };
   return (
     <>
@@ -32,9 +34,15 @@ const Service = () => {
                     handleMouseOver(index);
                     setTitle(item.title);
                   }}
-                  onMouseOut={handleMouseOut}
+                  onMouseOut={() => {
+                    handleMouseOut;
+                    setTitle("");
+                  }}
                 >
-                  <img src={web1} alt="" />
+                  <item.image
+                    color={item.title === title ? iconColor : "#ffbd39"}
+                    size={48}
+                  />
                   <p className=" font-bold text-xs">{item.title}</p>
                   <div
                     className={`w-10 h-[0.05rem] bg-${
