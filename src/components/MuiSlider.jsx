@@ -15,7 +15,7 @@ export default function ColorSlider() {
       </Typography>
       <Slider
         aria-label="Temperature"
-        defaultValue={60}
+        value={60}
         getAriaValueText={valuetext}
         color="info"
       />

@@ -1,15 +1,12 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import profile from "../assets/images/profile-img.jpg";
+import profile from "../assets/images/profile.png";
 
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const Hero = () => {
   return (
@@ -21,7 +18,7 @@ const Hero = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay,Pagination]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper text-white w-full h-[88vh]"
       >
         <SwiperSlide className="flex items-center justify-between">

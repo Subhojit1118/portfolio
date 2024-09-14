@@ -10,8 +10,12 @@ const Skill = () => {
           Vokalia and Consonantia
         </p>
         <div className="w-full grid grid-rows-1 grid-cols-2">
-          <div className="w-1/2 ">{ColorSlider()}</div>
-          <div className="w-1/2">{ColorSlider()}</div>
+          <div className="w-full flex items-center justify-center">
+            {ColorSlider()}
+          </div>
+          <div className="w-full flex items-center justify-center">
+            {ColorSlider()}
+          </div>
         </div>
       </div>
     </>
